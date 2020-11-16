@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "aad-secured-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/aadSecured/AadSecuredWebPart.js",
+          "manifest": "./src/webparts/aadSecured/AadSecuredWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AadSecuredWebPartStrings": "lib/webparts/aadSecured/loc/{locale}.js"
+  }
+}

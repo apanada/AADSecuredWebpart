@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "aadsecured-webpart-client-side-solution",
+    "id": "639e7190-6dff-48c0-9094-5fc5e55e7340",
+    "version": "3.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": true,
+    "skipFeatureDeployment": true,
+    "webApiPermissionRequests": [
+      {
+        "resource": "bookmarks-app",
+        "scope": "user_impersonation"
+      },
+      {
+        "resource": "Windows Azure Active Directory",
+        "scope": "User.Read"
+      }
+    ],
+    "developer": {
+      "name": "Ajit Panada",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    }
+  },
+  "paths": {
+    "zippedPackage": "solution/aadsecured-webpart.sppkg"
+  }
+}
