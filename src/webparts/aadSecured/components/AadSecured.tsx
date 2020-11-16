@@ -51,17 +51,19 @@ export default class AadSecured extends React.Component<IAadSecuredProps, IAadSe
               <TextField
                 placeholder={"Enter Bookmark Name"}
                 resizable={false}
+                value={this.state.bookmarkName}
                 onChanged={(text) => this.setState({ bookmarkName: text })}
               />
               <TextField
                 placeholder={"Enter Bookmark Url"}
                 resizable={false}
+                value={this.state.bookmarkUrl}
                 onChanged={(text) => this.setState({ bookmarkUrl: text })}
               />
             </div>
             <div className="ms-Grid-col ms-u-sm6 ms-u-md6 ms-u-lg6">
               <PrimaryButton
-                data-automation-id="test"
+                data-automation-id="addBookmark"
                 disabled={!(bookmarkName.length > 0 && bookmarkUrl.length > 0)}
                 text="Add Bookmark"
                 onClick={this._addBookmark.bind(this)}
@@ -120,7 +122,7 @@ export default class AadSecured extends React.Component<IAadSecuredProps, IAadSe
 
     try {
       bookmark = await this.bookmarkService.GetBookmarksById(this.state.bookmarkName);
-      this.setState({ isLoading: false });
+      this.setState({ isLoading: false, bookmarkUrl: bookmark.Url });
     } catch (error) {
       this.setState({ isLoading: false });
       console.log(error);
