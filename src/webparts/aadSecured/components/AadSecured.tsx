@@ -4,6 +4,7 @@ import { IAadSecuredProps } from './IAadSecuredProps';
 import { Spinner, PrimaryButton, Label, TextField } from 'office-ui-fabric-react'; import { Bookmark } from '../../../models/Bookmark';
 
 import { BookmarkService, IBookmarkService } from '../../../services/BookmarkService';
+import { Logger, LogLevel } from '@pnp/logging';
 
 export interface IAadSecuredState {
   bookmarkName: string;
@@ -27,13 +28,28 @@ export default class AadSecured extends React.Component<IAadSecuredProps, IAadSe
   }
 
   public async componentDidMount() {
-    // Get the analysis service
-    this.bookmarkService = new BookmarkService(this.props.bookmarksClient);
+    try {
+      Logger.log({
+        message: "Inside AadSecured - componentDidMount()",
+        level: LogLevel.Info,
+        data: "fetching of data initialized"
+      });
 
-    const bookmarks: Bookmark[] = await this._getBookmarks();
-    this.setState({
-      bookmarks: bookmarks
-    });
+      // Get the analysis service
+      this.bookmarkService = new BookmarkService(this.props.bookmarksClient);
+
+      const bookmarks: Bookmark[] = await this._getBookmarks();
+      this.setState({
+        bookmarks: bookmarks
+      });
+    }
+    catch (error) {
+      Logger.log({
+        message: "Error AadSecured - componentDidMount()",
+        level: LogLevel.Error,
+        data: error
+      });
+    }
   }
 
   public render(): React.ReactElement<IAadSecuredProps> {
