@@ -3,7 +3,7 @@ import { ApplicationInsights, SeverityLevel } from '@microsoft/applicationinsigh
 import { ReactPlugin, withAITracking } from '@microsoft/applicationinsights-react-js';
 import { createBrowserHistory } from 'history';
 
-import { _logEventFormat, _logMessageFormat } from "./Utils/Utilities";
+import { _hashUser, _logEventFormat, _logMessageFormat } from "./Utils/Utilities";
 import { CONST } from "./Utils/Constants";
 
 export class AILogListener implements ILogListener {
@@ -41,6 +41,7 @@ export class AILogListener implements ILogListener {
         });
 
         appInsights.loadAppInsights();
+        appInsights.trackPageView();
         appInsights.context.application.ver = WEBPART_VERSION; // application_Version
         appInsights.setAuthenticatedUserContext(_hashUser(currentUser)); // user_AuthenticateId
         return appInsights;
@@ -81,16 +82,16 @@ export class AILogListener implements ILogListener {
                     AILogListener._appInsightsInstance.trackTrace({ message: msg, severityLevel: SeverityLevel.Verbose }, CONST.ApplicationInsights.CustomProps);
                     break;
                 case LogLevel.Info:
-                    AILogListener._appInsightsInstance.trackTrace({ message: msg, severityLevel: SeverityLevel.Information }, CONST.ApplicationInsights.CustomProps);
                     console.log({ ...CONST.ApplicationInsights.CustomProps, Message: msg });
+                    AILogListener._appInsightsInstance.trackTrace({ message: msg, severityLevel: SeverityLevel.Information }, CONST.ApplicationInsights.CustomProps);
                     break;
                 case LogLevel.Warning:
-                    AILogListener._appInsightsInstance.trackTrace({ message: msg, severityLevel: SeverityLevel.Warning }, CONST.ApplicationInsights.CustomProps);
                     console.warn({ ...CONST.ApplicationInsights.CustomProps, Message: msg });
+                    AILogListener._appInsightsInstance.trackTrace({ message: msg, severityLevel: SeverityLevel.Warning }, CONST.ApplicationInsights.CustomProps);
                     break;
                 case LogLevel.Error:
-                    AILogListener._appInsightsInstance.trackException({ exception: new Error(msg), severityLevel: SeverityLevel.Error, properties: CONST.ApplicationInsights.CustomProps });
                     console.error({ ...CONST.ApplicationInsights.CustomProps, Message: msg });
+                    AILogListener._appInsightsInstance.trackException({ exception: new Error(msg), severityLevel: SeverityLevel.Error, properties: CONST.ApplicationInsights.CustomProps });
                     break;
             }
     }

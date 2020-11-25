@@ -15,6 +15,8 @@ import { AADClientService, IAADClientService } from "../../services/AADClientSer
 import { ConsoleListener, Logger, LogLevel } from "@pnp/logging";
 import { AILogListener } from "../../services/AILogListener/AILogListener";
 
+import * as myLibrary from 'corporate-library';
+
 export interface IAadSecuredWebPartProps {
   description: string;
 }
@@ -28,10 +30,15 @@ export default class AadSecuredWebPart extends BaseClientSideWebPart<
     let aadClientService: IAADClientService = new AADClientService(this.context);
     this._client = await aadClientService.GetAADClient("b964e2a6-c547-42e9-a745-1208bdec3fb9");
 
-    Logger.subscribe(new ConsoleListener());
     Logger.subscribe(new AILogListener(this.context.pageContext.user.email));
-    if (DEBUG)
+    if (DEBUG) {
       Logger.activeLogLevel = LogLevel.Verbose;
+    } else {
+      Logger.activeLogLevel = LogLevel.Info;
+    }
+
+    const myInstance = new myLibrary.CorporateLibraryLibrary();
+    console.log(myInstance.getCurrentTime());
 
     return Promise.resolve<void>();
   }
