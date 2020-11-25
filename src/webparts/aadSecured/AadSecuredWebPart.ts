@@ -12,8 +12,7 @@ import * as strings from "AadSecuredWebPartStrings";
 import AadSecured from "./components/AadSecured";
 import { IAadSecuredProps } from "./components/IAadSecuredProps";
 import { AADClientService, IAADClientService } from "../../services/AADClientService";
-import { ConsoleListener, Logger, LogLevel } from "@pnp/logging";
-import { AILogListener } from "../../services/AILogListener/AILogListener";
+import { Logger, LogLevel } from "@pnp/logging";
 
 import * as myLibrary from 'corporate-library';
 
@@ -30,7 +29,14 @@ export default class AadSecuredWebPart extends BaseClientSideWebPart<
     let aadClientService: IAADClientService = new AADClientService(this.context);
     this._client = await aadClientService.GetAADClient("b964e2a6-c547-42e9-a745-1208bdec3fb9");
 
-    Logger.subscribe(new AILogListener(this.context.pageContext.user.email));
+    Logger.subscribe(
+      new myLibrary.AILogListener(
+        AZURE_APPINSIGHTS_INSTRUMENTATIONKEY,
+        this.context.pageContext.user.email,
+        WEBPART_NAME,
+        WEBPART_VERSION
+      )
+    );
     if (DEBUG) {
       Logger.activeLogLevel = LogLevel.Verbose;
     } else {
