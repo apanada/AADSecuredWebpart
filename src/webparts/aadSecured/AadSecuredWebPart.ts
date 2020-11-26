@@ -6,14 +6,11 @@ import {
   PropertyPaneTextField,
 } from "@microsoft/sp-property-pane";
 import { BaseClientSideWebPart } from "@microsoft/sp-webpart-base";
-import { AadHttpClient } from "@microsoft/sp-http";
+import { Logger, LogLevel } from "@pnp/logging";
 
 import * as strings from "AadSecuredWebPartStrings";
 import AadSecured from "./components/AadSecured";
 import { IAadSecuredProps } from "./components/IAadSecuredProps";
-import { AADClientService, IAADClientService } from "../../services/AADClientService";
-import { Logger, LogLevel } from "@pnp/logging";
-
 import * as myLibrary from 'corporate-library';
 
 export interface IAadSecuredWebPartProps {
@@ -23,11 +20,11 @@ export interface IAadSecuredWebPartProps {
 export default class AadSecuredWebPart extends BaseClientSideWebPart<
   IAadSecuredWebPartProps
   > {
-  private _client: AadHttpClient = undefined;
+  private bookmarkService: myLibrary.IBookmarkService;
 
   protected async onInit(): Promise<void> {
-    let aadClientService: IAADClientService = new AADClientService(this.context);
-    this._client = await aadClientService.GetAADClient("b964e2a6-c547-42e9-a745-1208bdec3fb9");
+    // Get the bookmarks service
+    this.bookmarkService = new myLibrary.BookmarkService(this.context);
 
     Logger.subscribe(
       new myLibrary.AILogListener(
@@ -42,9 +39,6 @@ export default class AadSecuredWebPart extends BaseClientSideWebPart<
     } else {
       Logger.activeLogLevel = LogLevel.Info;
     }
-
-    const myInstance = new myLibrary.CorporateLibraryLibrary();
-    console.log(myInstance.getCurrentTime());
 
     return Promise.resolve<void>();
   }
@@ -64,8 +58,7 @@ export default class AadSecuredWebPart extends BaseClientSideWebPart<
     const element: React.ReactElement<IAadSecuredProps> = React.createElement(
       AadSecured,
       {
-        context: this.context,
-        bookmarksClient: this._client
+        bookmarkService: this.bookmarkService
       }
     );
 

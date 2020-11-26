@@ -1,7 +1,5 @@
-import { AadHttpClient } from "@microsoft/sp-http";
-import { WebPartContext } from "@microsoft/sp-webpart-base";
+import * as myLibrary from 'corporate-library';
 
 export interface IAadSecuredProps {
-  context: WebPartContext;
-  bookmarksClient: AadHttpClient;
+  bookmarkService: myLibrary.IBookmarkService;
 }

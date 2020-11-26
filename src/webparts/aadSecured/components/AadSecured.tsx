@@ -3,8 +3,8 @@ import styles from './AadSecured.module.scss';
 import { IAadSecuredProps } from './IAadSecuredProps';
 import { Spinner, PrimaryButton, Label, TextField } from 'office-ui-fabric-react'; import { Bookmark } from '../../../models/Bookmark';
 
-import { BookmarkService, IBookmarkService } from '../../../services/BookmarkService';
 import { Logger, LogLevel } from '@pnp/logging';
+import * as myLibrary from 'corporate-library';
 
 export interface IAadSecuredState {
   bookmarkName: string;
@@ -14,8 +14,6 @@ export interface IAadSecuredState {
 }
 
 export default class AadSecured extends React.Component<IAadSecuredProps, IAadSecuredState> {
-  private bookmarkService: IBookmarkService;
-
   constructor(props: IAadSecuredProps) {
     super(props);
 
@@ -34,9 +32,6 @@ export default class AadSecured extends React.Component<IAadSecuredProps, IAadSe
         level: LogLevel.Info,
         data: "fetching of data initialized"
       });
-
-      // Get the analysis service
-      this.bookmarkService = new BookmarkService(this.props.bookmarksClient);
 
       const bookmarks: Bookmark[] = await this._getBookmarks();
       this.setState({
@@ -122,7 +117,7 @@ export default class AadSecured extends React.Component<IAadSecuredProps, IAadSe
     let bookmarks: Bookmark[] = [];
 
     try {
-      bookmarks = await this.bookmarkService.GetBookmarks();
+      bookmarks = await this.props.bookmarkService.GetBookmarks();
       this.setState({ isLoading: false });
     } catch (error) {
       this.setState({ isLoading: false });
@@ -137,7 +132,7 @@ export default class AadSecured extends React.Component<IAadSecuredProps, IAadSe
     let bookmark: Bookmark = {};
 
     try {
-      bookmark = await this.bookmarkService.GetBookmarksById(this.state.bookmarkName);
+      bookmark = await this.props.bookmarkService.GetBookmarksById(this.state.bookmarkName);
       this.setState({ isLoading: false, bookmarkUrl: bookmark.Url });
     } catch (error) {
       this.setState({ isLoading: false });
@@ -153,7 +148,7 @@ export default class AadSecured extends React.Component<IAadSecuredProps, IAadSe
 
     try {
       const bookmark: Bookmark = { Id: this.state.bookmarkName, Url: this.state.bookmarkUrl };
-      addedBookmark = await this.bookmarkService.AddBookmark(bookmark);
+      addedBookmark = await this.props.bookmarkService.AddBookmark(bookmark);
       this.setState({ isLoading: false });
 
       if (addedBookmark !== null && addedBookmark !== undefined && addedBookmark !== "Bookmark already exists.") {
