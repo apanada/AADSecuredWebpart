@@ -15,6 +15,7 @@ stages:
       - template: ./azure-pipelines-build-template.yaml
         parameters:
           name: "buildsolution"
+          variable_group_name: qa_configuration
   - stage: "deployqa"
     # uncomment if you want deployments to occur only for a specific branch
     #condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
