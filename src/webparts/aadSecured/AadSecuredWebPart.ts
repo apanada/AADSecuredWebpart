@@ -11,7 +11,7 @@ import { Logger, LogLevel } from "@pnp/logging";
 import * as strings from "AadSecuredWebPartStrings";
 import AadSecured from "./components/AadSecured";
 import { IAadSecuredProps } from "./components/IAadSecuredProps";
-import * as myLibrary from 'corporate-library';
+import * as myLibrary from 'spfx-corporate-library';
 
 export interface IAadSecuredWebPartProps {
   description: string;

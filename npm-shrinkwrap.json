@@ -4,6 +4,46 @@
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
+    "@angular/common": {
+      "version": "5.2.11",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@angular/common/-/common-5.2.11.tgz",
+      "integrity": "sha1-7nUgsCUQooaPMLH5GJcQLUgyTt8=",
+      "requires": {
+        "tslib": "^1.7.1"
+      }
+    },
+    "@angular/compiler": {
+      "version": "5.2.11",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@angular/compiler/-/compiler-5.2.11.tgz",
+      "integrity": "sha1-yiw4zabd3lK1lIuM/2VR/xnV6d4=",
+      "requires": {
+        "tslib": "^1.7.1"
+      }
+    },
+    "@angular/core": {
+      "version": "5.2.11",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@angular/core/-/core-5.2.11.tgz",
+      "integrity": "sha1-Djj99PoDijwWjHKVJoLy7jch8aM=",
+      "requires": {
+        "tslib": "^1.7.1"
+      }
+    },
+    "@angular/http": {
+      "version": "5.2.11",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@angular/http/-/http-5.2.11.tgz",
+      "integrity": "sha1-K2SZg8lUrnVPbzkGDi2D2gvzUq0=",
+      "requires": {
+        "tslib": "^1.7.1"
+      }
+    },
+    "@angular/platform-browser": {
+      "version": "5.2.11",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@angular/platform-browser/-/platform-browser-5.2.11.tgz",
+      "integrity": "sha1-W+N5+W10tOvoSkR2M+1Sect+ZB4=",
+      "requires": {
+        "tslib": "^1.7.1"
+      }
+    },
     "@babel/code-frame": {
       "version": "7.10.4",
       "resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.10.4.tgz",
@@ -28,6 +68,21 @@
         "@babel/helper-validator-identifier": "^7.10.4",
         "chalk": "^2.0.0",
         "js-tokens": "^4.0.0"
+      }
+    },
+    "@babel/runtime": {
+      "version": "7.12.5",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@babel/runtime/-/runtime-7.12.5.tgz",
+      "integrity": "sha1-QQ5+SHRB4bNgwpvnFdhw2bmFiC4=",
+      "requires": {
+        "regenerator-runtime": "^0.13.4"
+      },
+      "dependencies": {
+        "regenerator-runtime": {
+          "version": "0.13.7",
+          "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz",
+          "integrity": "sha1-ysLazIoepnX+qrrriugziYrkb1U="
+        }
       }
     },
     "@fluentui/date-time-utilities": {
@@ -133,6 +188,98 @@
         "@microsoft/tsdoc": "0.12.14"
       }
     },
+    "@microsoft/applicationinsights-analytics-js": {
+      "version": "2.5.10",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@microsoft/applicationinsights-analytics-js/-/applicationinsights-analytics-js-2.5.10.tgz",
+      "integrity": "sha1-Vf202SVs3K+YpRmxBhfSMS9fOAk=",
+      "requires": {
+        "@microsoft/applicationinsights-common": "2.5.10",
+        "@microsoft/applicationinsights-core-js": "2.5.10",
+        "@microsoft/applicationinsights-shims": "1.0.3",
+        "@microsoft/dynamicproto-js": "^1.1.0"
+      }
+    },
+    "@microsoft/applicationinsights-channel-js": {
+      "version": "2.5.10",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@microsoft/applicationinsights-channel-js/-/applicationinsights-channel-js-2.5.10.tgz",
+      "integrity": "sha1-YL5f5tL5D/KVyzvgB9SEBGAx2Gg=",
+      "requires": {
+        "@microsoft/applicationinsights-common": "2.5.10",
+        "@microsoft/applicationinsights-core-js": "2.5.10",
+        "@microsoft/applicationinsights-shims": "1.0.3",
+        "@microsoft/dynamicproto-js": "^1.1.0"
+      }
+    },
+    "@microsoft/applicationinsights-common": {
+      "version": "2.5.10",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@microsoft/applicationinsights-common/-/applicationinsights-common-2.5.10.tgz",
+      "integrity": "sha1-4JIJTtOGlKYturNukqKNsB/9Pfs=",
+      "requires": {
+        "@microsoft/applicationinsights-core-js": "2.5.10",
+        "@microsoft/applicationinsights-shims": "1.0.3"
+      }
+    },
+    "@microsoft/applicationinsights-core-js": {
+      "version": "2.5.10",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@microsoft/applicationinsights-core-js/-/applicationinsights-core-js-2.5.10.tgz",
+      "integrity": "sha1-Ck1DfSQ6Qxet87jJLI0l/hYK1VM=",
+      "requires": {
+        "@microsoft/applicationinsights-shims": "1.0.3",
+        "@microsoft/dynamicproto-js": "^1.1.0"
+      }
+    },
+    "@microsoft/applicationinsights-dependencies-js": {
+      "version": "2.5.10",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@microsoft/applicationinsights-dependencies-js/-/applicationinsights-dependencies-js-2.5.10.tgz",
+      "integrity": "sha1-BCakSRJZldF4A3joI5DiUeDwt0g=",
+      "requires": {
+        "@microsoft/applicationinsights-common": "2.5.10",
+        "@microsoft/applicationinsights-core-js": "2.5.10",
+        "@microsoft/applicationinsights-shims": "1.0.3",
+        "@microsoft/dynamicproto-js": "^1.1.0"
+      }
+    },
+    "@microsoft/applicationinsights-properties-js": {
+      "version": "2.5.10",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@microsoft/applicationinsights-properties-js/-/applicationinsights-properties-js-2.5.10.tgz",
+      "integrity": "sha1-i56BgC9uiiGha80OicxOw/2Jn+Y=",
+      "requires": {
+        "@microsoft/applicationinsights-common": "2.5.10",
+        "@microsoft/applicationinsights-core-js": "2.5.10",
+        "@microsoft/applicationinsights-shims": "1.0.3"
+      }
+    },
+    "@microsoft/applicationinsights-react-js": {
+      "version": "3.0.5",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@microsoft/applicationinsights-react-js/-/applicationinsights-react-js-3.0.5.tgz",
+      "integrity": "sha1-jreDo93wAw0h1+aGpNwfPejmFpc=",
+      "requires": {
+        "@microsoft/applicationinsights-common": "^2.5.10",
+        "@microsoft/applicationinsights-core-js": "^2.5.10",
+        "@microsoft/applicationinsights-shims": "^1.0.3",
+        "history": "^4.10.1"
+      }
+    },
+    "@microsoft/applicationinsights-shims": {
+      "version": "1.0.3",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@microsoft/applicationinsights-shims/-/applicationinsights-shims-1.0.3.tgz",
+      "integrity": "sha1-nx0WurBDDyXMF2EcU3dWz039ODM="
+    },
+    "@microsoft/applicationinsights-web": {
+      "version": "2.5.10",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@microsoft/applicationinsights-web/-/applicationinsights-web-2.5.10.tgz",
+      "integrity": "sha1-5JTFzqNIEPxH8PwtrGHBthLph+4=",
+      "requires": {
+        "@microsoft/applicationinsights-analytics-js": "2.5.10",
+        "@microsoft/applicationinsights-channel-js": "2.5.10",
+        "@microsoft/applicationinsights-common": "2.5.10",
+        "@microsoft/applicationinsights-core-js": "2.5.10",
+        "@microsoft/applicationinsights-dependencies-js": "2.5.10",
+        "@microsoft/applicationinsights-properties-js": "2.5.10",
+        "@microsoft/applicationinsights-shims": "1.0.3",
+        "@microsoft/dynamicproto-js": "^1.1.0"
+      }
+    },
     "@microsoft/decorators": {
       "version": "1.11.0",
       "resolved": "https://registry.npmjs.org/@microsoft/decorators/-/decorators-1.11.0.tgz",
@@ -140,6 +287,11 @@
       "requires": {
         "tslib": "~1.10.0"
       }
+    },
+    "@microsoft/dynamicproto-js": {
+      "version": "1.1.0",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@microsoft/dynamicproto-js/-/dynamicproto-js-1.1.0.tgz",
+      "integrity": "sha1-tqgfSsxlX/2PN/7rkuc6B+KzliI="
     },
     "@microsoft/gulp-core-build": {
       "version": "3.12.1",
@@ -2498,6 +2650,21 @@
       "integrity": "sha512-518yewjSga1jLdiLrcmpMFlaba5P+50b0TWNFUpC+SL9Yzf0kMi57qw+bMl+rQ08cGqH1vLx4eg9YFUbZXgZ0Q==",
       "dev": true
     },
+    "@pnp/common": {
+      "version": "2.0.12",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@pnp/common/-/common-2.0.12.tgz",
+      "integrity": "sha1-Non0uVExhLAwJICWwpP++f9JTzE=",
+      "requires": {
+        "tslib": "2.0.0"
+      },
+      "dependencies": {
+        "tslib": {
+          "version": "2.0.0",
+          "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/tslib/-/tslib-2.0.0.tgz",
+          "integrity": "sha1-GNE/wtzgQFHiDwdMyDh/2Aic5PM="
+        }
+      }
+    },
     "@pnp/logging": {
       "version": "2.0.12",
       "resolved": "https://registry.npmjs.org/@pnp/logging/-/logging-2.0.12.tgz",
@@ -2510,6 +2677,23 @@
           "version": "2.0.0",
           "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.0.0.tgz",
           "integrity": "sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g=="
+        }
+      }
+    },
+    "@pnp/odata": {
+      "version": "2.0.12",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@pnp/odata/-/odata-2.0.12.tgz",
+      "integrity": "sha1-DFuq7Z+6jEKebisE4RM6DkYk02I=",
+      "requires": {
+        "@pnp/common": "2.0.12",
+        "@pnp/logging": "2.0.12",
+        "tslib": "2.0.0"
+      },
+      "dependencies": {
+        "tslib": {
+          "version": "2.0.0",
+          "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/tslib/-/tslib-2.0.0.tgz",
+          "integrity": "sha1-GNE/wtzgQFHiDwdMyDh/2Aic5PM="
         }
       }
     },
@@ -5315,8 +5499,7 @@
     "core-js": {
       "version": "2.6.11",
       "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.6.11.tgz",
-      "integrity": "sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==",
-      "dev": true
+      "integrity": "sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg=="
     },
     "core-util-is": {
       "version": "1.0.2",
@@ -8505,6 +8688,19 @@
       "integrity": "sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==",
       "dev": true
     },
+    "history": {
+      "version": "4.10.1",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/history/-/history-4.10.1.tgz",
+      "integrity": "sha1-MzcaZeOoOyZ0NOKz87G0xYqtTPM=",
+      "requires": {
+        "@babel/runtime": "^7.1.2",
+        "loose-envify": "^1.2.0",
+        "resolve-pathname": "^3.0.0",
+        "tiny-invariant": "^1.0.2",
+        "tiny-warning": "^1.0.0",
+        "value-equal": "^1.0.1"
+      }
+    },
     "hmac-drbg": {
       "version": "1.0.1",
       "resolved": "https://registry.npmjs.org/hmac-drbg/-/hmac-drbg-1.0.1.tgz",
@@ -11040,6 +11236,11 @@
         "json-schema": "0.2.3",
         "verror": "1.10.0"
       }
+    },
+    "jssha": {
+      "version": "3.1.2",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/jssha/-/jssha-3.1.2.tgz",
+      "integrity": "sha1-57barorjU6ONqOW2r8EGaI/SSlk="
     },
     "jszip": {
       "version": "2.5.0",
@@ -13997,6 +14198,32 @@
         "mute-stream": "~0.0.4"
       }
     },
+    "read-appsettings-json": {
+      "version": "1.0.98",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/read-appsettings-json/-/read-appsettings-json-1.0.98.tgz",
+      "integrity": "sha1-3dDy/KoCTT/4/OU1JkB1DH5KHAc=",
+      "requires": {
+        "@angular/common": "^5.2.4",
+        "@angular/compiler": "^5.2.4",
+        "@angular/core": "^5.2.4",
+        "@angular/http": "^5.2.4",
+        "@angular/platform-browser": "^5.2.4",
+        "core-js": "^2.5.3",
+        "reflect-metadata": "^0.1.12",
+        "rxjs": "^5.5.6",
+        "zone.js": "^0.8.20"
+      },
+      "dependencies": {
+        "rxjs": {
+          "version": "5.5.12",
+          "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/rxjs/-/rxjs-5.5.12.tgz",
+          "integrity": "sha1-b6YbinfD15PbrycL7i9D9lLXQcw=",
+          "requires": {
+            "symbol-observable": "1.0.1"
+          }
+        }
+      }
+    },
     "read-package-json": {
       "version": "2.1.2",
       "resolved": "https://registry.npmjs.org/read-package-json/-/read-package-json-2.1.2.tgz",
@@ -14128,6 +14355,11 @@
         "indent-string": "^2.1.0",
         "strip-indent": "^1.0.1"
       }
+    },
+    "reflect-metadata": {
+      "version": "0.1.13",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/reflect-metadata/-/reflect-metadata-0.1.13.tgz",
+      "integrity": "sha1-Z648pXyXKiqhZCsQ/jY/4y1J3Ag="
     },
     "regenerator-runtime": {
       "version": "0.11.1",
@@ -14343,6 +14575,11 @@
       "requires": {
         "value-or-function": "^3.0.0"
       }
+    },
+    "resolve-pathname": {
+      "version": "3.0.0",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/resolve-pathname/-/resolve-pathname-3.0.0.tgz",
+      "integrity": "sha1-mdAiJNPPJjaJvsuzk7xWAxMCXc0="
     },
     "resolve-url": {
       "version": "0.2.1",
@@ -14950,6 +15187,20 @@
       "integrity": "sha512-+orQK83kyMva3WyPf59k1+Y525csj5JejicWut55zeTWANuN17qSiSLUXWtzHeNWORSvT7GLDJ/E/XiIWoXBTw==",
       "dev": true
     },
+    "spfx-corporate-library": {
+      "version": "0.0.5",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/spfx-corporate-library/-/spfx-corporate-library-0.0.5.tgz",
+      "integrity": "sha1-nldmpQCv7vHzHXxKTJH+qpoRliI=",
+      "requires": {
+        "@microsoft/applicationinsights-react-js": "^3.0.5",
+        "@microsoft/applicationinsights-web": "^2.5.10",
+        "@pnp/common": "^2.0.12",
+        "@pnp/logging": "^2.0.12",
+        "@pnp/odata": "^2.0.12",
+        "jssha": "^3.1.2",
+        "read-appsettings-json": "^1.0.98"
+      }
+    },
     "split": {
       "version": "1.0.1",
       "resolved": "https://registry.npmjs.org/split/-/split-1.0.1.tgz",
@@ -15364,6 +15615,11 @@
       "integrity": "sha1-O5hzuKkB5Hxu/iFSajrDcu8ou8c=",
       "dev": true
     },
+    "symbol-observable": {
+      "version": "1.0.1",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/symbol-observable/-/symbol-observable-1.0.1.tgz",
+      "integrity": "sha1-g0D8RwLDEi310iKI+IKD9RPT/dQ="
+    },
     "symbol-tree": {
       "version": "3.2.4",
       "resolved": "https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.4.tgz",
@@ -15674,6 +15930,11 @@
       "integrity": "sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=",
       "dev": true
     },
+    "tiny-invariant": {
+      "version": "1.1.0",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/tiny-invariant/-/tiny-invariant-1.1.0.tgz",
+      "integrity": "sha1-Y0xfjv3CdxS384bDXmdgmR0jCHU="
+    },
     "tiny-lr": {
       "version": "0.2.1",
       "resolved": "https://registry.npmjs.org/tiny-lr/-/tiny-lr-0.2.1.tgz",
@@ -15777,6 +16038,11 @@
           }
         }
       }
+    },
+    "tiny-warning": {
+      "version": "1.0.3",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/tiny-warning/-/tiny-warning-1.0.3.tgz",
+      "integrity": "sha1-lKMNtFPfTGQ9D9VmBg1gqHXYR1Q="
     },
     "tmp": {
       "version": "0.0.33",
@@ -16381,6 +16647,11 @@
       "version": "8.2.0",
       "resolved": "https://registry.npmjs.org/validator/-/validator-8.2.0.tgz",
       "integrity": "sha512-Yw5wW34fSv5spzTXNkokD6S6/Oq92d8q/t14TqsS3fAiA1RYnxSFSIZ+CY3n6PGGRCq5HhJTSepQvFUS2QUDxA=="
+    },
+    "value-equal": {
+      "version": "1.0.1",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/value-equal/-/value-equal-1.0.1.tgz",
+      "integrity": "sha1-Hgt5THNMXAyt4XnEN9NW2TGjTWw="
     },
     "value-or-function": {
       "version": "3.0.0",
@@ -17049,6 +17320,11 @@
         "lodash.isequal": "^4.0.0",
         "validator": "^8.0.0"
       }
+    },
+    "zone.js": {
+      "version": "0.8.29",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/zone.js/-/zone.js-0.8.29.tgz",
+      "integrity": "sha1-jc6Sqg3VU7ULxb+7kK+Zhq2EWhI="
     }
   }
 }

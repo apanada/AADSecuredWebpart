@@ -4,7 +4,7 @@ import { IAadSecuredProps } from './IAadSecuredProps';
 import { Spinner, PrimaryButton, Label, TextField } from 'office-ui-fabric-react'; import { Bookmark } from '../../../models/Bookmark';
 
 import { Logger, LogLevel } from '@pnp/logging';
-import * as myLibrary from 'corporate-library';
+import * as myLibrary from 'spfx-corporate-library';
 
 export interface IAadSecuredState {
   bookmarkName: string;
