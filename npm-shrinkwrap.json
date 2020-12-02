@@ -15118,9 +15118,9 @@
       "dev": true
     },
     "spfx-corporate-library": {
-      "version": "1.1.0",
-      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/spfx-corporate-library/-/spfx-corporate-library-1.1.0.tgz",
-      "integrity": "sha1-BXNk6HCNkYxnO33+5AbvBK7nno8=",
+      "version": "1.1.1",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/spfx-corporate-library/-/spfx-corporate-library-1.1.1.tgz",
+      "integrity": "sha1-Md13aI7hS21O7j+5vN1P1l9u3ck=",
       "requires": {
         "@microsoft/applicationinsights-react-js": "^3.0.5",
         "@microsoft/applicationinsights-web": "^2.5.10",
