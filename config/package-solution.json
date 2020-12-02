@@ -3,7 +3,7 @@
   "solution": {
     "name": "aadsecured-webpart-client-side-solution",
     "id": "639e7190-6dff-48c0-9094-5fc5e55e7340",
-    "version": "7.0.0.3",
+    "version": "7.0.0.4",
     "includeClientSideAssets": true,
     "isDomainIsolated": true,
     "webApiPermissionRequests": [
