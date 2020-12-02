@@ -4,46 +4,6 @@
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
-    "@angular/common": {
-      "version": "5.2.11",
-      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@angular/common/-/common-5.2.11.tgz",
-      "integrity": "sha1-7nUgsCUQooaPMLH5GJcQLUgyTt8=",
-      "requires": {
-        "tslib": "^1.7.1"
-      }
-    },
-    "@angular/compiler": {
-      "version": "5.2.11",
-      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@angular/compiler/-/compiler-5.2.11.tgz",
-      "integrity": "sha1-yiw4zabd3lK1lIuM/2VR/xnV6d4=",
-      "requires": {
-        "tslib": "^1.7.1"
-      }
-    },
-    "@angular/core": {
-      "version": "5.2.11",
-      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@angular/core/-/core-5.2.11.tgz",
-      "integrity": "sha1-Djj99PoDijwWjHKVJoLy7jch8aM=",
-      "requires": {
-        "tslib": "^1.7.1"
-      }
-    },
-    "@angular/http": {
-      "version": "5.2.11",
-      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@angular/http/-/http-5.2.11.tgz",
-      "integrity": "sha1-K2SZg8lUrnVPbzkGDi2D2gvzUq0=",
-      "requires": {
-        "tslib": "^1.7.1"
-      }
-    },
-    "@angular/platform-browser": {
-      "version": "5.2.11",
-      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/@angular/platform-browser/-/platform-browser-5.2.11.tgz",
-      "integrity": "sha1-W+N5+W10tOvoSkR2M+1Sect+ZB4=",
-      "requires": {
-        "tslib": "^1.7.1"
-      }
-    },
     "@babel/code-frame": {
       "version": "7.10.4",
       "resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.10.4.tgz",
@@ -5499,7 +5459,8 @@
     "core-js": {
       "version": "2.6.11",
       "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.6.11.tgz",
-      "integrity": "sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg=="
+      "integrity": "sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==",
+      "dev": true
     },
     "core-util-is": {
       "version": "1.0.2",
@@ -14198,32 +14159,6 @@
         "mute-stream": "~0.0.4"
       }
     },
-    "read-appsettings-json": {
-      "version": "1.0.98",
-      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/read-appsettings-json/-/read-appsettings-json-1.0.98.tgz",
-      "integrity": "sha1-3dDy/KoCTT/4/OU1JkB1DH5KHAc=",
-      "requires": {
-        "@angular/common": "^5.2.4",
-        "@angular/compiler": "^5.2.4",
-        "@angular/core": "^5.2.4",
-        "@angular/http": "^5.2.4",
-        "@angular/platform-browser": "^5.2.4",
-        "core-js": "^2.5.3",
-        "reflect-metadata": "^0.1.12",
-        "rxjs": "^5.5.6",
-        "zone.js": "^0.8.20"
-      },
-      "dependencies": {
-        "rxjs": {
-          "version": "5.5.12",
-          "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/rxjs/-/rxjs-5.5.12.tgz",
-          "integrity": "sha1-b6YbinfD15PbrycL7i9D9lLXQcw=",
-          "requires": {
-            "symbol-observable": "1.0.1"
-          }
-        }
-      }
-    },
     "read-package-json": {
       "version": "2.1.2",
       "resolved": "https://registry.npmjs.org/read-package-json/-/read-package-json-2.1.2.tgz",
@@ -14355,11 +14290,6 @@
         "indent-string": "^2.1.0",
         "strip-indent": "^1.0.1"
       }
-    },
-    "reflect-metadata": {
-      "version": "0.1.13",
-      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/reflect-metadata/-/reflect-metadata-0.1.13.tgz",
-      "integrity": "sha1-Z648pXyXKiqhZCsQ/jY/4y1J3Ag="
     },
     "regenerator-runtime": {
       "version": "0.11.1",
@@ -15188,17 +15118,16 @@
       "dev": true
     },
     "spfx-corporate-library": {
-      "version": "0.0.5",
-      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/spfx-corporate-library/-/spfx-corporate-library-0.0.5.tgz",
-      "integrity": "sha1-nldmpQCv7vHzHXxKTJH+qpoRliI=",
+      "version": "1.1.0",
+      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/spfx-corporate-library/-/spfx-corporate-library-1.1.0.tgz",
+      "integrity": "sha1-BXNk6HCNkYxnO33+5AbvBK7nno8=",
       "requires": {
         "@microsoft/applicationinsights-react-js": "^3.0.5",
         "@microsoft/applicationinsights-web": "^2.5.10",
         "@pnp/common": "^2.0.12",
         "@pnp/logging": "^2.0.12",
         "@pnp/odata": "^2.0.12",
-        "jssha": "^3.1.2",
-        "read-appsettings-json": "^1.0.98"
+        "jssha": "^3.1.2"
       }
     },
     "split": {
@@ -15614,11 +15543,6 @@
       "resolved": "https://registry.npmjs.org/symbol/-/symbol-0.2.3.tgz",
       "integrity": "sha1-O5hzuKkB5Hxu/iFSajrDcu8ou8c=",
       "dev": true
-    },
-    "symbol-observable": {
-      "version": "1.0.1",
-      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/symbol-observable/-/symbol-observable-1.0.1.tgz",
-      "integrity": "sha1-g0D8RwLDEi310iKI+IKD9RPT/dQ="
     },
     "symbol-tree": {
       "version": "3.2.4",
@@ -17320,11 +17244,6 @@
         "lodash.isequal": "^4.0.0",
         "validator": "^8.0.0"
       }
-    },
-    "zone.js": {
-      "version": "0.8.29",
-      "resolved": "https://pkgs.dev.azure.com/TerraformReadiness/27ba9157-71a6-45a5-812c-832fd887b0e8/_packaging/libraries/npm/registry/zone.js/-/zone.js-0.8.29.tgz",
-      "integrity": "sha1-jc6Sqg3VU7ULxb+7kK+Zhq2EWhI="
     }
   }
 }
